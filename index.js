@@ -8,7 +8,7 @@ app.use("/", (req, res) => {
 })
 
 // Schedule the task to run every 13 minutes
-const websiteUrls = ["https://watchout-backend-lrrm.onrender.com"];
+const websiteUrls = ["https://watchout-backend-lrrm.onrender.com", "https://crone-setup.onrender.com"];
 
 cron.schedule('*/12 * * * *', () => {
     websiteUrls.forEach((url) => {
